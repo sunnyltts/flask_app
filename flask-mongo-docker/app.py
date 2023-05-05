@@ -3,6 +3,7 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from flasgger import Swagger
 
+
 db_name = "SampleDotCom"
 app = Flask(__name__)
 swagger = Swagger(app)
@@ -10,6 +11,7 @@ app.config["MONGO_URI"] = f"mongodb://mongo:27017/{db_name}"
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 mongo = PyMongo(app)
 db = mongo.db
+
 
 @app.route("/")
 def index():
