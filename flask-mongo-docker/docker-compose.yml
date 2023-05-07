@@ -1,17 +1,25 @@
 version: '3'
 services:
   web:
-   build: .
-   ports:
-     - "5000:5000"
-   depends_on:
+    build: .
+    ports:
+      - "5000:5000"
+    depends_on:
      - redis
      - mongo
-  redis:
-    image: redis
+    environment:
+      - REDIS_HOST=redis
   mongo:
     image: mongo
     volumes:
       - mongodb_data:/data/db
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    # command: redis-server --appendonly yes
 volumes:
   mongodb_data:
+  redis_data:

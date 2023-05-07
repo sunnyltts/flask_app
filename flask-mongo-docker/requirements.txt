@@ -4,4 +4,4 @@ flasgger==0.9.5
 pytest==7.3.1
 requests==2.29.0
 redis==4.5.4
-Flask-JWT-Extendeed==4.4.4
+Flask-JWT-Extended==4.4.4
