@@ -2,6 +2,9 @@ from flask import Flask, request, jsonify
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from flasgger import Swagger
+from flask_jwt_extended import(
+    
+)
 
 db_name = "SampleDotCom"
 app = Flask(__name__)
