@@ -8,7 +8,7 @@ Python: 3.10.6
 docker: Docker version 20.10.21, build 20.10.21-0ubuntu1~22.04.2
 docker-compose: docker-compose version 1.29.2, build unknown
 
-APP_DIR="/home/ubuntu/tr-flask-mongo-docker"
+APP_DIR="/home/ubuntu/flask-mongo-docker"
 start the app: 
 cd $APP_DIR
 sudo docker-compose up -d
