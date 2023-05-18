@@ -140,7 +140,7 @@ def register():
 
 
 @app.route("/api/v1/users")
-@jwt_required()
+#@jwt_required()
 def get_all_users():
     """
     Get all users
@@ -184,7 +184,7 @@ def get_all_users():
 
 
 @app.route("/api/v1/users", methods=["POST"])
-@jwt_required()
+#@jwt_required()
 def create_user():
     """
     Create new user
@@ -227,7 +227,7 @@ def create_user():
 
 
 @app.route("/api/v1/users/<id>", methods=["DELETE"])
-@jwt_required()
+#@jwt_required()
 def delete_user(id):
     """
     Delete user

@@ -15,7 +15,7 @@ sudo docker-compose up -d
 get running containers: sudo docker ps -a
 
 ## MongoDB:
-login to mongoshell: sudo docker exec -it flask-mongo-docker_mongo_1 mongosh
+login to mongoshell: sudo docker exec -it flask-mongo-docker-mongo-1 mongosh
 create database: use SampleDotCom
 create table users: db.createCollection("users")
 

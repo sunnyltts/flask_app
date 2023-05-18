@@ -1,7 +1,7 @@
 import requests
 from app import app
 
-API_URL = 'http://3.7.179.205:5000'
+API_URL = 'http://localhost:5000'
 
 class TestApp:
 
